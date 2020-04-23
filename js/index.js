@@ -6,24 +6,18 @@ $('.qy-top-left >li').hover(function() {
         $(this).find('div').fadeOut()
     })
     // 导航
-$('.qy-nav-one a').eq(1).on('mouseover', function() {
-    $('.qy-nav-four').hide()
-    $('.qy-nav-two').slideDown()
+$('.qy-nav-one li').eq(1).on('mouseenter', function() {
+    $(this).find('.qy-nav-two').slideDown()
 })
-
-// $('.qy-nav-one a').eq(1).on('mouseleave', function() {
-//     $('.qy-nav-four').slideUp()
-// })
-
-
-$('.qy-nav-one a').eq(4).on('mouseover', function() {
-    $('.qy-nav-four').hide()
-    $('.qy-nav-three').slideDown()
+$('.qy-nav-one li').eq(1).on('mouseleave', function() {
+    $(this).find('.qy-nav-two').slideUp()
 })
-
-// $('.qy-nav-one a').on('mouseout', function() {
-//     $('.qy-nav-four').hide()
-// })
+$('.qy-nav-one li').eq(4).on('mouseenter', function() {
+    $(this).find('.qy-nav-three').slideDown()
+})
+$('.qy-nav-one li').eq(4).on('mouseleave', function() {
+    $(this).find('.qy-nav-three').slideUp()
+})
 
 // 轮播图
 $('.qy-slider ol li').on('click', function() {
@@ -69,17 +63,16 @@ $('.qy-slider-two-all>a').on('mouseleave', function() {
     $(this).find('div').show()
 })
 
-
-
 // 企业资讯
 $('.qy-news-bottom>a').on('mouseenter', function() {
-    // $(this).find('.qy-news-bottom-one-img').find('div').show()
+    $(this).find('.qy-news-bottom-one-img').find('div').show()
     $(this).find('.qy-news-bottom-one-green').show()
     $(this).siblings().find('.qy-news-bottom-one-green').hide()
     $(this).find('.qy-news-bottom-one>p').css({ "color": "#ffffff" })
 })
 
 $('.qy-news-bottom>a').on('mouseleave', function() {
+    $(this).find('.qy-news-bottom-one-img').find('div').hide()
     $(this).find('.qy-news-bottom-one-green').hide()
     $(this).find('.qy-news-bottom-one .one').css({ "color": "#373737" })
     $(this).find('.qy-news-bottom-one .two').css({ "color": "#b9b9b9" })
