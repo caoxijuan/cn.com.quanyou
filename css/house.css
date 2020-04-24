@@ -1,0 +1,95 @@
+/* 顶部 */
+
+.house-top-top {
+    width: 100%;
+    height: 16px;
+    background-color: #f5f5f5;
+}
+
+.house-top-bottom {
+    height: 40px;
+    background-color: #eaeaea;
+}
+
+.house-top-bottom>div>div {
+    float: right;
+    margin-top: 10px;
+}
+
+.house-top-bottom .num {
+    font-size: 20px;
+    color: #4ac39a;
+    width: 130px;
+}
+
+.house-top-bottom .phone {
+    width: 84px;
+    height: 20px;
+    line-height: 20px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #9c9c9c;
+    border-radius: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.house-top-bottom a {
+    position: relative;
+    float: right;
+    line-height: 40px;
+    font-size: 12px;
+    color: #606060;
+    margin: 0 10px;
+}
+
+.house-top-bottom a:hover i {
+    background-position: 0 -21px;
+}
+
+.house-top-bottom a:hover span {
+    color: #4c9980;
+}
+
+.house-top-bottom a i {
+    float: left;
+    display: block;
+    width: 23px;
+    height: 21px;
+    background-image: url(../images/house/icon-sum.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin-top: 10px;
+    margin-right: 5px;
+    opacity: 0.5;
+    transform: scale(0.8);
+    transition: all 0.6s;
+}
+
+.house-top-bottom a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    width: 1px;
+    height: 20px;
+    background-color: #cccccc;
+    opacity: 0.8;
+}
+
+
+/* 搜索框 */
+
+.house-search-logo a {
+    display: block;
+    width: 245px;
+    height: 60px;
+    margin-top: 10px;
+    margin-right: 60px;
+}
+
+.house-search-logo a img {
+    width: 100%;
+    height: 100%;
+}
