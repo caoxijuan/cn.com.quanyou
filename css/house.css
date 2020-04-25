@@ -9,6 +9,7 @@
 .house-top-bottom {
     height: 40px;
     background-color: #eaeaea;
+    margin-bottom: 10px;
 }
 
 .house-top-bottom>div>div {
@@ -81,6 +82,10 @@
 
 /* 搜索框 */
 
+.house-search-logo {
+    float: left;
+}
+
 .house-search-logo a {
     display: block;
     width: 245px;
@@ -92,4 +97,62 @@
 .house-search-logo a img {
     width: 100%;
     height: 100%;
+}
+
+.house-search-main {
+    width: 510px;
+    float: left;
+}
+
+.house-search-main-top {
+    float: left;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 390px;
+    border: 1px solid #3dc094;
+    box-sizing: border-box;
+    border-right: none;
+}
+
+.house-search-main-top input {
+    width: 367px;
+    margin-left: 18px;
+    border: none;
+    margin-top: 10px;
+}
+
+.house-search-main-bottom {
+    display: block;
+    float: left;
+    height: 40px;
+    width: 120px;
+    background-color: #3DC094;
+    margin-top: 10px;
+    transition: all 0.6s;
+}
+
+.house-search-main-bottom:hover {
+    background-color: #ea5404;
+}
+
+.house-search-main-bottom i {
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: url(../images/house/icon-sum.png) no-repeat;
+    background-position: 0 -48px;
+    margin-top: 9px;
+    margin-left: 30px;
+}
+
+.house-search-main-bottom span {
+    display: block;
+    float: left;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 13px;
+    margin-left: 10px;
+    font-weight: 600;
 }
