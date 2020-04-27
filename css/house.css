@@ -9,7 +9,6 @@
 .house-top-bottom {
     height: 40px;
     background-color: #eaeaea;
-    margin-bottom: 10px;
 }
 
 .house-top-bottom>div>div {
@@ -83,7 +82,9 @@
 /* 搜索框 */
 
 .house-search {
-    margin-bottom: 10px;
+    padding-bottom: 10px;
+    background-color: #ffffff;
+    padding-top: 10px;
 }
 
 .house-search-logo {
@@ -283,10 +284,12 @@
 
 .house-nav {
     height: 49px;
+    background-color: #ffffff;
 }
 
 .house-nav-left {
     float: left;
+    position: relative;
 }
 
 .house-nav-left-mian {
@@ -320,6 +323,11 @@
 .house-nav-left-bottom {
     width: 240px;
     height: 550px;
+    z-index: 100;
+    position: absolute;
+    top: 49px;
+    left: 0;
+    background-color: rgba(255, 255, 255, .8);
 }
 
 .house-nav-left-bottom>li {
@@ -337,6 +345,7 @@
 
 .house-nav-left-bottom>li .room {
     float: left;
+    display: block;
     width: 25px;
     height: 25px;
     background-image: url(../images/house/icon-sum.png);
@@ -372,7 +381,7 @@
     line-height: 19px;
 }
 
-.house-nav-left-bottom>li :hover .room {
+.house-nav-left-bottom>li:hover i {
     background-position: 1px -121px;
 }
 
@@ -389,7 +398,7 @@
 }
 
 .house-nav-left-bottom .nav-two {
-    width: 800px;
+    width: 0px;
     height: 550px;
     background-color: rgba(255, 255, 255, .8);
     position: absolute;
@@ -398,7 +407,13 @@
     transition: all 0.6s;
     top: -13px;
     left: 240px;
+    overflow: hidden;
 }
+
+
+/* .house-nav-left-bottom .nav-two:hover {
+    background-color: #ffffff;
+} */
 
 .nav-two h3 {
     font-size: 16px;
@@ -428,6 +443,11 @@
     color: #7b7c7b;
     line-height: 19px;
     font-size: 14px;
+    transition: all 0.6s;
+}
+
+.nav-two ul li a:hover {
+    color: #81d6ba;
 }
 
 .nav-two-img {
@@ -447,4 +467,910 @@
 .nav-two-img a img {
     width: 100%;
     height: auto;
+}
+
+.house-nav-left-bottom>li:hover .nav-two {
+    width: 800px;
+}
+
+.house-nav-left-bottom>li:nth-child(2) .room {
+    background-position: -33px -96px;
+}
+
+.house-nav-left-bottom>li:nth-child(2):hover .room {
+    background-position: -33px -122px;
+}
+
+.house-nav-left-bottom>li:nth-child(2) .nav-two {
+    top: -105px;
+}
+
+.house-nav-left-bottom>li:nth-child(3) .room {
+    background-position: -73px -95px;
+}
+
+.house-nav-left-bottom>li:nth-child(3):hover .room {
+    background-position: -73px -121px;
+}
+
+.house-nav-left-bottom>li:nth-child(3) .nav-two {
+    top: -197px;
+}
+
+.house-nav-left-bottom>li:nth-child(4) .room {
+    background-position: -106px -95px;
+}
+
+.house-nav-left-bottom>li:nth-child(4):hover .room {
+    background-position: -106px -121px;
+}
+
+.house-nav-left-bottom>li:nth-child(4) .nav-two {
+    top: -289px;
+}
+
+.house-nav-left-bottom>li:nth-child(5) .room {
+    background-position: -143px -93px;
+}
+
+.house-nav-left-bottom>li:nth-child(5):hover .room {
+    background-position: -143px -119px;
+}
+
+.house-nav-left-bottom>li:nth-child(5) .nav-two {
+    top: -381px;
+}
+
+.house-nav-left-bottom>li:nth-child(6) .room {
+    background-position: -178px -95px;
+}
+
+.house-nav-left-bottom>li:nth-child(6):hover .room {
+    background-position: -178px -120px;
+}
+
+.house-nav-left-bottom>li:nth-child(6) .nav-two {
+    top: -473px;
+}
+
+.house-nav-right {
+    margin-left: 64px;
+    float: left;
+    height: 48px;
+}
+
+.house-nav-right a {
+    display: inline-block;
+    font-size: 16px;
+    padding: 13px 20px 15px;
+    color: #525252;
+    transition: all 0.6s;
+}
+
+.house-nav-right a:hover {
+    color: #3b9176;
+}
+
+
+/* 轮播图 */
+
+.house-slider {
+    width: 100%;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px
+}
+
+.house-slider ul {
+    width: 100%;
+}
+
+.house-slider ul li {
+    float: left;
+}
+
+
+/* 专项服务 */
+
+.house-exclusive-main {
+    margin-bottom: 140px;
+    padding-bottom: 85px;
+    border-bottom: 1px dashed #9C9C9C;
+    position: relative;
+}
+
+.house-exclusive-main h3 {
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 5px;
+    padding-bottom: 3px;
+    font-weight: 400;
+}
+
+.house-exclusive-main h3 span {
+    color: #4ac49b;
+}
+
+.house-exclusive-main>div {
+    text-align: center;
+    opacity: .6;
+    font-size: 12px;
+}
+
+.house-exclusive-main ul {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+}
+
+.house-exclusive-main ul li {
+    float: left;
+    margin-left: 116px;
+}
+
+.house-exclusive-main ul li>div {
+    width: 70px;
+    height: 70px;
+    border: 1px dashed #9C9C9C;
+    background-color: #fff;
+    background-image: url(../images/house/icon-sum.png);
+    background-repeat: no-repeat;
+    background-position: 2px -161px;
+    border-radius: 35px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.house-exclusive-main ul li>p {
+    font-size: 16px;
+}
+
+.house-exclusive-main ul li>p span {
+    color: #3dc094;
+}
+
+.house-exclusive-main ul li:nth-child(2)>div {
+    background-position: -74px -163px;
+}
+
+.house-exclusive-main ul li:nth-child(3)>div {
+    background-position: -148px -161px;
+}
+
+.house-exclusive-main ul li:nth-child(4)>div {
+    background-position: -230px -160px;
+}
+
+.house-exclusive-main ul li:nth-child(5)>div {
+    background-position: -302px -159px;
+}
+
+
+/* 预约 */
+
+.house-order-main {
+    height: 70px;
+    width: 370px;
+    border: 3px solid #19a581;
+    margin: 0 auto;
+    margin-bottom: 130px;
+    display: block;
+    position: relative;
+    transition: all 0.6s;
+}
+
+.house-order-main:hover {
+    border-color: #3a9075;
+}
+
+.house-order-main:hover a {
+    background-color: #3a9075;
+}
+
+.house-order-main a {
+    display: inline-block;
+    height: 60px;
+    width: 360px;
+    background: #19a581;
+    margin: 5px 5px;
+    text-align: center;
+    color: #fff;
+    transition: all 0.6s;
+}
+
+.house-order-main a h3 {
+    font-size: 24px;
+    margin-bottom: 7px;
+    margin-top: 4px;
+}
+
+
+/* 全屋样板间 */
+
+.house-all {
+    margin-bottom: 110px;
+}
+
+.house-all-top {
+    border-bottom: 3px solid rgba(0, 0, 0, .1);
+    height: 48px;
+    margin-bottom: 20px;
+}
+
+.house-all-one {
+    color: #3DC094;
+    border-bottom: 3px solid #3DC094;
+    height: 48px;
+    float: left;
+}
+
+.house-all-one h3 {
+    float: left;
+    padding: 0 12px;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.house-all-one i {
+    float: left;
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: url(../images/house/icon-sum.png) no-repeat;
+    background-position: -2px -244px;
+}
+
+.house-all-one span {
+    float: left;
+    font-size: 12px;
+    color: #3E3E3E;
+    opacity: .6;
+    padding-top: 21px;
+}
+
+.house-all-two {
+    float: right;
+    padding-top: 7px;
+    line-height: 42px;
+}
+
+.house-all-bottom li {
+    float: left;
+    margin-right: 45px;
+}
+
+.house-all-bottom li:last-child {
+    margin-right: 0;
+}
+
+.house-all-bottom li a {
+    display: block;
+    border-bottom: 3px solid #ccc;
+    position: relative;
+}
+
+.house-all-img {
+    width: 266px;
+    height: 185px;
+    overflow: hidden;
+}
+
+.house-all-img img {
+    width: 100%;
+    height: 100%;
+    transition: all .6s;
+}
+
+.house-all-show {
+    font-size: 16px;
+    color: #636363;
+    padding-top: 20px;
+    padding-bottom: 6px;
+    transition: all .6s;
+    font-weight: 700;
+}
+
+.house-all-img-top {
+    width: 120px;
+    height: 30px;
+    background: #fff;
+    border-radius: 75px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    transition: all .6s;
+}
+
+.house-all-img-top i {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/house/icon-sum.png) no-repeat;
+    background-position: -55px -252px;
+    margin: 4px 10px 4px 10px;
+    float: left;
+    transition: all .3s;
+}
+
+.house-all-img-top p {
+    float: left;
+    margin-top: 7px;
+    font-size: 14px;
+    color: #3E3E3E;
+    transition: all .6s;
+    opacity: .8;
+}
+
+.house-all-bottom li a:hover .house-all-img-top i {
+    background-position: -85px -252px;
+}
+
+.house-all-bottom li a:hover .house-all-img-top {
+    background-color: #3dc094;
+}
+
+.house-all-bottom li a:hover .house-all-img-top p {
+    color: #ffffff;
+}
+
+.house-all-bottom li a:hover .house-all-show {
+    color: #67ccaa;
+}
+
+.house-all-bottom li a:hover {
+    border-bottom-color: #3dc094;
+}
+
+.house-all-bottom li a:hover .house-all-img img {
+    transform: scale(1.1);
+}
+
+
+/* 定制风格 */
+
+.house-custom {
+    margin-bottom: 10px;
+}
+
+.house-custom-top {
+    height: 49px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    margin-bottom: 20px;
+}
+
+.house-custom-one {
+    color: #3DC094;
+    border-bottom: 3px solid #3DC094;
+    height: 48px;
+    float: left;
+}
+
+.house-custom-one h3 {
+    float: left;
+    padding: 0 12px;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.house-custom-one i {
+    float: left;
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: url(../images/house/icon-sum.png) no-repeat;
+    background-position: -2px -244px;
+}
+
+.house-custom-one span {
+    float: left;
+    font-size: 12px;
+    color: #3E3E3E;
+    opacity: .6;
+    padding-top: 21px;
+}
+
+.house-custom-two {
+    float: right;
+    line-height: 42px;
+}
+
+.house-custom-two a {
+    float: left;
+    margin-left: 35px;
+    padding-top: 10px;
+}
+
+.house-custom-two a i {
+    display: block;
+    width: 23px;
+    height: 20px;
+    margin-top: 11px;
+    margin-right: 10px;
+    background: url(../images/house/icon-sum.png) no-repeat;
+    background-position: -57px -293px;
+    float: left;
+    transition: all .3s ease 0s;
+}
+
+.house-custom-two a p {
+    float: left;
+    transition: all .6s ease 0s;
+}
+
+.house-custom-two a:hover i {
+    background-position: -57px -318px;
+}
+
+.house-custom-two a:hover p {
+    color: #50c59e;
+}
+
+.house-custom-two a:nth-child(2) i {
+    background-position: -89px -293px;
+}
+
+.house-custom-two a:nth-child(2):hover i {
+    background-position: -89px -319px;
+}
+
+.house-custom-two a:nth-child(3) i {
+    background-position: -118px -293px;
+}
+
+.house-custom-two a:nth-child(3):hover i {
+    background-position: -118px -318px;
+}
+
+.house-custom-two a:nth-child(4) i {
+    background-position: -146px -293px;
+}
+
+.house-custom-two a:nth-child(4):hover i {
+    background-position: -146px -318px;
+}
+
+.house-custom-two a:nth-child(5) i {
+    background-position: -175px -293px;
+}
+
+.house-custom-two a:nth-child(5):hover i {
+    background-position: -175px -318px;
+}
+
+.house-custom-two a:nth-child(6) i {
+    background-position: -200px -293px;
+}
+
+.house-custom-two a:nth-child(6):hover i {
+    background-position: -200px -318px;
+}
+
+.house-custom-bottom {
+    margin-bottom: 100px;
+}
+
+.house-custom-bottom>a {
+    display: block;
+    width: 295px;
+    height: 540px;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.house-custom-bottom>a img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s;
+}
+
+.house-custom-bottom>a:hover img {
+    transform: scale(1.1);
+}
+
+.house-custom-more {
+    position: absolute;
+    width: 285px;
+    height: 120px;
+    background: #fff;
+    left: 5px;
+    top: 365px;
+    position: absolute;
+    z-index: 1;
+}
+
+.house-custom-more h2 {
+    float: left;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 35px 0 20px 0;
+    width: 100%;
+    color: #656565;
+    transition: all .3s;
+    text-align: center;
+}
+
+.house-custom-bottom>a:hover .house-custom-more h2 {
+    color: #64cda9;
+}
+
+.house-custom-more p {
+    position: absolute;
+    left: 100px;
+    bottom: 29px;
+    background: #fff;
+    padding: 0 15px;
+    transition: all .3s ease 0s;
+    color: #6B6969;
+}
+
+.house-custom-bottom>a:hover .house-custom-more p {
+    color: #3dc094;
+}
+
+.house-custom-bottom>a:hover .house-custom-more p::before {
+    background-color: #3dc094;
+}
+
+.house-custom-bottom>a:hover .house-custom-more p::after {
+    background-color: #3dc094;
+}
+
+.house-custom-more p::before {
+    height: 1px;
+    width: 85%;
+    display: block;
+    content: '';
+    background-color: #9C9C9C;
+    position: absolute;
+    right: -85%;
+    transition: all .3s ease 0s;
+    top: 7px;
+}
+
+.house-custom-more p::after {
+    height: 1px;
+    width: 85%;
+    display: block;
+    content: '';
+    background-color: #9C9C9C;
+    position: absolute;
+    left: -85%;
+    transition: all .3s ease 0s;
+    top: 7px;
+}
+
+.house-custom-bottom-right a {
+    display: block;
+    float: left;
+    width: 215px;
+    height: 170px;
+    margin-top: 10px;
+    margin-right: 11px;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.house-custom-bottom-right a img {
+    width: 100%;
+    height: auto;
+    transition: all 0.6s;
+}
+
+.house-custom-bottom-right a:hover img {
+    transform: scale(1.1);
+}
+
+.house-custom-bottom-right a:nth-child(-n+2) {
+    width: 441px;
+    height: 360px;
+    margin-top: 0;
+    margin-right: 13px;
+}
+
+.house-custom-bottom-right a .bottom {
+    width: 100%;
+    height: 45px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    left: 0;
+    background: #fff;
+    opacity: .7;
+}
+
+.house-custom-bottom-right a:nth-child(-n+2) .bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    z-index: 1;
+    opacity: .7;
+}
+
+.house-custom-bottom-right a:nth-child(2) {
+    margin-right: 0;
+}
+
+.house-custom-bottom-right a:last-child {
+    margin-right: 0;
+}
+
+.house-custom-bottom-right a h2 {
+    font-size: 16px;
+    line-height: 45px;
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+    left: 11px;
+    transition: all 0.6s;
+}
+
+.house-custom-bottom-right a .top-left {
+    width: 24px;
+    height: 24px;
+    border-radius: 13px;
+    text-align: center;
+    line-height: 24px;
+    color: #4d4c4b;
+    position: absolute;
+    top: 20px;
+    right: 144px;
+    background-color: #faf9f9;
+    overflow: hidden;
+    text-indent: 6px;
+    letter-spacing: 5px;
+    transition: all 0.6s;
+    font-size: 14px;
+}
+
+.house-custom-bottom-right a .top-mid {
+    top: 20px;
+    right: 110px;
+}
+
+.house-custom-bottom-right a .top-right {
+    position: absolute;
+    width: 75px;
+    height: 24px;
+    top: 20px;
+    right: 25px;
+    text-indent: 0px;
+    letter-spacing: 0px;
+    overflow: hidden;
+}
+
+.house-custom-bottom-right a:hover h2 {
+    color: #4bc199;
+}
+
+.house-custom-bottom-right a:hover .top-left {
+    background-color: #4bc199;
+    color: #ffffff;
+}
+
+.house-all-one i {
+    background-position: -3px -324px;
+}
+
+.house-all-two a {
+    float: right;
+    display: block;
+    padding: 1px 10px;
+    height: 18px;
+    border: 1px solid #258566;
+    border-radius: 25px;
+    line-height: 18px;
+    margin-top: 7px;
+    color: #258566;
+    position: relative;
+    transition: all 0.6s;
+}
+
+.house-all-two a::before {
+    content: "";
+    width: 35px;
+    height: 40px;
+    position: absolute;
+    top: -29px;
+    right: 0;
+    background-image: url(../images/house/icon-sum.png);
+    background-position: -237px -287px;
+}
+
+.house-all-two a:hover {
+    color: #ffffff;
+    background-color: #3a9075;
+}
+
+.house-all {
+    margin-bottom: 100px;
+}
+
+
+/* 设计师 */
+
+.house-design {
+    margin-bottom: 20px;
+}
+
+.house-design-one i {
+    background-position: -3px -362px;
+}
+
+.house-design-top {
+    margin-bottom: 20px;
+}
+
+.house-design-mian a {
+    display: block;
+    float: left;
+    width: 170px;
+    height: 220px;
+    overflow: hidden;
+    margin-right: 1px;
+    margin-bottom: 1px;
+}
+
+.house-design-mian a img {
+    width: 100%;
+    height: auto;
+    transition: all 0.6s;
+}
+
+.house-design-mian a:hover img {
+    transform: scale(1.1);
+}
+
+.house-design-mian a:nth-child(10) {
+    width: 510px;
+    height: 220px;
+    margin-right: 3px;
+    position: relative;
+}
+
+.house-design-mian a:nth-child(10) h2 {
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    margin-left: -193px;
+    font-size: 26px;
+    color: #3e3e3e;
+    transition: all 0.6s;
+}
+
+.house-design-mian a:nth-child(10) p {
+    position: absolute;
+    top: 90px;
+    font-size: 26px;
+    color: #9a9a9a;
+    left: 50%;
+    margin-left: -170px;
+    transition: all .6s;
+}
+
+.house-design-mian a:nth-child(10) span {
+    position: absolute;
+    bottom: 65px;
+    left: 50%;
+    margin-left: -55px;
+    font-size: 16px;
+    color: #636363;
+    transition: all .6s
+}
+
+.house-design-mian a:hover h2 {
+    color: #3dc094;
+}
+
+.house-design-mian a:hover p {
+    color: #9edcc8;
+}
+
+.house-design-mian a:hover span {
+    color: #62cba8;
+}
+
+
+/* 售后 */
+
+.house-sale-main {
+    height: 295px;
+    width: 100%;
+    background-image: url(../images/house/sheji-13.jpg);
+}
+
+.house-sale-main a {
+    display: block;
+    float: left;
+    height: 130px;
+    width: 145px;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    float: left;
+    transition: all .3s;
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+.house-sale-main a:first-child {
+    margin-left: 300px;
+}
+
+.house-sale-main a div:first-child {
+    width: 143px;
+    float: left;
+}
+
+.house-sale-main a i {
+    display: block;
+    height: 49px;
+    width: 47px;
+    background: url(../images/house/icon-sum.png) no-repeat;
+    background-position: -356px 0;
+    margin: 0 auto;
+    margin-top: 17px;
+}
+
+.house-sale-main a p {
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    opacity: .8;
+}
+
+.house-sale-main a h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.house-sale-main a div:last-child {
+    border-left: 1px solid #fff;
+    float: right;
+    height: 95px;
+    width: 140px;
+    margin-top: 15px;
+    transition: all .6s;
+    opacity: 0;
+}
+
+.house-sale-main a div:last-child p {
+    font-size: 14px;
+    color: #fff;
+    line-height: 32px;
+    text-align: center;
+}
+
+.house-sale-main a:nth-child(2) i {
+    background-position: -356px -54px;
+}
+
+.house-sale-main a:nth-child(3) i {
+    background-position: -356px -113px;
+}
+
+.house-sale-main a:nth-child(4) i {
+    background-position: -353px -249px;
+}
+
+.house-sale-main a:nth-child(2) div:last-child p,
+.house-sale-main a:nth-child(3) div:last-child p {
+    line-height: 50px;
+}
+
+.house-sale-main a:hover {
+    width: 285px;
+    border-color: rgba(255, 255, 255, .6);
+}
+
+.house-sale-main a:hover div:last-child {
+    opacity: 1;
 }
