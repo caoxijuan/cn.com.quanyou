@@ -130,3 +130,64 @@ $('.house-custom-bottom-right a .all-mid').hover(function() {
         "right": 25
     })
 })
+
+// 轮播图
+var box = new PictureCarousel('#box', {
+    direction: 'left', //轮播方向：left，right
+    interval: 4000, //单位ms,轮播持续时间
+    duration: 50, //单位ms,自动切换时间间隔，最佳速度:容器宽度/duration = 25
+    autoplay: true, //是否自动播放
+    display: 1, //同时显示的滑块数量
+    arrow: true, //是否显示左右箭头
+    dots: true, //是否显示指示点
+    listData: [ //插入图片等的数据
+        {
+            src: 'images/house/slider-1.jpg',
+            alt: '1'
+        },
+        {
+            src: 'images/house/slider-2.jpg',
+            alt: '2'
+        },
+        {
+            src: 'images/house/slider-3.jpg',
+            alt: '3'
+        },
+        // {
+        //     src: 't4.png',
+        //     alt: '4'
+        // }
+    ]
+});
+box.init();
+
+let num = $('.house-nav-left-bottom li:nth-child(2)').offset().top
+$(document).on('scroll', function() {
+    if ($(this).scrollTop() >= num) {
+        $('.side-nav a:last-child').css({
+            "display": "block"
+        })
+    } else {
+        $('.side-nav a:last-child').css({
+            "display": "none"
+        })
+    }
+})
+
+
+$('.side-nav a:last-child').on('click', function() {
+    $('html').animate({
+        "scrollTop": 0
+    }, 1000)
+})
+
+
+$('.house-nav-left-bottom li .nav-two').hover(function() {
+    $(this).css({
+        "background-color": "#fff"
+    })
+}, function() {
+    $(this).css({
+        "background-color": "rgba(255, 255, 255, .8)"
+    })
+})

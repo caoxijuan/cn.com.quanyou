@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./lib/reset.css">
     <link rel="stylesheet" href="./css/common-two.css">
     <link rel="stylesheet" href="./css/house.css">
+    <link rel="stylesheet" href="./lib/jslbt/picture-carousel.min.css">
+    <script src="./lib/jslbt/picture-carousel.min.js"></script>
 </head>
 
 <body>
@@ -567,27 +569,7 @@
         </div>
     </div>
     <!-- 轮播图 -->
-    <div class="house-slider">
-        <ul>
-            <li>
-                <a href="javascript:;"><img src="./images/house/slider-1.jpg" alt=""></a>
-            </li>
-            <li>
-                <a href="javascript:;"><img src="./images/house/slider-2.jpg" alt=""></a>
-            </li>
-            <li>
-                <a href="javascript:;"><img src="./images/house/slider-3.jpg" alt=""></a>
-            </li>
-        </ul>
-        <ol>
-            <li class="prev">
-                <a href="javascript:;"><img src="./images/house/jiantou.png" alt=""></a>
-            </li>
-            <li class="next">
-                <a href="javascript:;"><img src="./images/house/jiantoul.png" alt=""></a>
-            </li>
-        </ol>
-    </div>
+    <div id="box"></div>
     <!-- 专项服务 -->
     <div class="house-exclusive clearfix">
         <div class="container">
@@ -960,6 +942,156 @@
                 </a>
             </div>
         </div>
+    </div>
+    <!-- 新闻 -->
+    <div class="house-news">
+        <div class="container">
+            <div class="house-news-main">
+                <h2>新闻</h2>
+                <p>NEWS</p>
+                <div class="house-news-main-nav clearfix">
+                    <a href="javascript:;">所有新闻</a><span>/</span>
+                    <a href="javascript:;">全友新闻</a><span>/</span>
+                    <a href="javascript:;">媒体报道</a>
+                </div>
+                <a href="javascript:;">查看更多新闻</a>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="house-floor">
+        <div class="container">
+            <div class="house-floor-top clearfix">
+                <ul>
+                    <li>
+                        <i></i>
+                        <div class="right">
+                            <h4>灵感库</h4>
+                            <p>找到喜欢的风格</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i></i>
+                        <div class="right">
+                            <h4>样板间</h4>
+                            <p>找到喜欢的户型</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i></i>
+                        <div class="right">
+                            <h4>免费量房设计</h4>
+                            <p>让需求更有尺度</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i></i>
+                        <div class="right">
+                            <h4>DIY</h4>
+                            <p>让家魅力百变</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i></i>
+                        <div class="right">
+                            <h4>创意设计</h4>
+                            <p>找到满意的设计师</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i></i>
+                        <div class="right">
+                            <h4>个性定制</h4>
+                            <p>让您的家与众不同</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="house-floor-phone clearfix">
+                    <div class="clearfix">
+                        <i></i>24小时贴心服务
+                    </div>
+                    <p>400 - 8800 - 315</p>
+                </div>
+            </div>
+        </div>
+        <div class="house-floor-bottom">
+            <div class="house-floor-bottom-top">
+                <div class="container">
+                    <div class="left">
+                        <li>全屋样板间</li>
+                        <li>预约设计师</li>
+                        <li>家居DIY</li>
+                        <li>售后服务</li>
+                        <li>最新资讯</li>
+                    </div>
+                    <div class="right">
+                        <a href="javascript:;">
+                            <img src="./images/house/logo1.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="house-floor-bottom-mid clearfix">
+                    <div class="house-floor-one">
+                        <a href="javascript:;">卧室</a>
+                        <a href="javascript:;">客厅</a>
+                        <a href="javascript:;">餐厅</a>
+                        <a href="javascript:;">功能房</a>
+                        <a href="javascript:;">儿童房</a>
+                        <a href="javascript:;">阳台</a>
+                    </div>
+                    <div class="house-floor-one">
+                        <a href="javascript:;">金牌设计师</a>
+                    </div>
+                    <div class="house-floor-one">
+                        <a href="javascript:;">DIY</a>
+                    </div>
+                    <div class="house-floor-one">
+                        <a href="javascript:;">365服务</a>
+                        <a href="javascript:;">专卖店查询</a>
+                        <a href="javascript:;">在线报修</a>
+                    </div>
+                    <div class="house-floor-one">
+                        <a href="javascript:;">公司动态</a>
+                    </div>
+                    <div class="house-floor-two">
+                        <div class="house-floor-two-img">
+                            <img src="./images/house/qcrode1.jpg" alt="">
+                            <span>关注获取优惠信息</span>
+                        </div>
+                        <p class="tel">TEL: 86-28-66771818</p>
+                        <p>FAX: 86-28-66771818</p>
+                        <p>E-MAIL: kf@quanyou.com</p>
+                    </div>
+                    <div class="house-floor-three">
+                        <a href="javascript:;">全友家居</a>
+                        <a href="javascript:;">全友卫浴</a>
+                    </div>
+                </div>
+            </div>
+            <div class="house-floor-floor clearfix">
+                <div class="container">
+                    <div class="house-floor-floor-left">
+                        ©成都市全友家私销售有限公司
+                        <a href="javascript:;">蜀ICP备11013304号-2</a>
+                    </div>
+                    <div class="house-floor-floor-right">
+                        <p>四川省成都市青羊区成飞大道333号2栋</p>
+                        <p>Chengfei Avenue #333, Qingyang District, Chengdu, Sichuan Province</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 侧边导航 -->
+    <div class="side-nav">
+        <a href="javascript:;">咨询</a>
+        <a href="javascript:;">预约</a>
+        <a href="javascript:;">门店查询
+            <i></i>
+        </a>
+        <a href="javascript:;"></a>
     </div>
     <script src="./lib/jquery/jquery-3.4.1.min.js"></script>
     <script src="./js/house.js"></script>
