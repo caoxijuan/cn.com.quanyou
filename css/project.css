@@ -266,3 +266,420 @@
     height: 280px;
     margin-top: 38px
 }
+
+
+/* 第一个图 */
+
+.project-top {
+    width: 100%;
+    height: 597px;
+    background-image: url(../images/project/project-01.jpg);
+}
+
+
+/* 简介 */
+
+.project-intro {
+    width: 100%;
+    height: 429px;
+    background-image: url(../images/project/project-05.png);
+}
+
+.project-intro-one {
+    padding-top: 88px;
+}
+
+.project-intro-one p {
+    font-size: 24px;
+    text-align: center;
+    color: #2fc7a0;
+}
+
+.project-intro-one p:first-child {
+    margin-bottom: 5px;
+}
+
+.project-intro-two {
+    margin-top: 38px;
+}
+
+.project-intro-two p {
+    font-size: 14px;
+    color: #989898;
+    text-align: center;
+    line-height: 36px;
+}
+
+
+/* 时间 */
+
+.project-timer {
+    height: 596px;
+    background-image: url(../images/project/project-02.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    position: relative;
+}
+
+.project-timer-top {
+    padding-top: 86px;
+    margin-left: 80px;
+}
+
+.project-timer-top img {
+    float: left;
+}
+
+.project-timer-top span {
+    font-size: 20px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 6px;
+    color: #ffffff;
+}
+
+.project-timer-top p {
+    float: left;
+    font-size: 38px;
+    color: #ffffff;
+    margin-left: 36px;
+    margin-top: 18px;
+}
+
+.project-timer-bottom {
+    margin-top: 54px;
+    margin-left: 80px;
+}
+
+.project-timer-bottom p {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.project-timer-bottom p:last-child {
+    margin-top: 20px;
+}
+
+.project-timer-img {
+    height: 396px;
+    width: 100%;
+    background-image: url(../images/project/project-03.png);
+    position: absolute;
+    top: 549px;
+    left: 0;
+}
+
+.project-slider {
+    background-color: #f2f4f4;
+    padding-top: 228px;
+}
+
+.project-slider-title {
+    padding-bottom: 45px;
+    padding-top: 178px;
+}
+
+.project-slider-title img {
+    width: 253px;
+    display: block;
+    margin: auto;
+}
+
+.project-slider-nav {
+    padding-bottom: 55px;
+    text-align: center;
+}
+
+.project-slider-nav a {
+    display: block;
+    float: left;
+    padding: 7px 30px;
+    color: #434343;
+    font-size: 16px;
+    margin: 0 32px;
+}
+
+.project-slider-nav a:first-child {
+    margin-left: 287px;
+}
+
+.project-slider-nav a .slider-one {
+    display: none;
+}
+
+.project-slider-nav a:first-child {
+    background-color: #2fc7a0;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.project-slider-nav a:hover {
+    color: #2fc7a0;
+}
+
+.project-slider-nav a:first-child:hover {
+    color: #ffffff;
+}
+
+.project-slider-main {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 58px;
+}
+
+.project-slider-main>ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 700px;
+    width: calc(1280px * 8);
+}
+
+.project-slider-main>ul li {
+    float: left;
+    width: 1280px;
+}
+
+.project-slider-main>ul li img {
+    height: 100%;
+    width: 100%;
+}
+
+.project-slider-main ol {
+    position: absolute;
+    left: 0;
+    bottom: 94px;
+    width: 100%;
+    text-align: center;
+}
+
+.project-slider-main ol li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.project-slider-main ol li.active {
+    background-color: #2fc7a0;
+}
+
+.project-slider {
+    position: relative;
+}
+
+.prev {
+    width: 64px;
+    height: 64px;
+    background-image: url(../images/slide-1.png);
+    position: absolute;
+    top: 62%;
+    left: -27px;
+    z-index: 10;
+}
+
+.prev:hover {
+    background-image: url(../images/slide-2.png);
+}
+
+.next {
+    width: 64px;
+    height: 64px;
+    background-image: url(../images/slide-3.png);
+    position: absolute;
+    top: 62%;
+    right: -27px;
+    z-index: 10;
+}
+
+.next:hover {
+    background-image: url(../images/slide-4.png);
+}
+
+.project-ser {
+    height: 850px;
+    width: 100%;
+    background-image: url(../images/project/project-04.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.project-ser-one {
+    padding-top: 156px;
+    color: #2fc7a0;
+    font-size: 28px;
+}
+
+.project-ser-two {
+    font-size: 16px;
+    color: #989898;
+    margin-top: 44px
+}
+
+.project-ser-two-top p {
+    height: 36px;
+}
+
+.project-ser-two-bottom {
+    margin-top: 32px;
+}
+
+.project-ser-two-bottom p {
+    height: 36px;
+}
+
+.project-ser-three {
+    margin-top: 78px;
+}
+
+
+/* 底部 */
+
+.qy-floor {
+    position: relative;
+    width: 100%;
+    height: 446px;
+    background-color: #fff;
+    padding-top: 17px;
+    box-sizing: border-box;
+}
+
+.qy-floor-one {
+    float: left;
+}
+
+.qy-floor-one a {
+    width: 260px;
+    height: 70px;
+    background: url(../images/logo.png) no-repeat center center;
+    background-size: 100%;
+    display: block;
+    margin-top: 52px
+}
+
+.qy-floor-one a:hover {
+    opacity: 0.8;
+}
+
+.qy-floor-one div {
+    width: 250px;
+    height: 60px;
+    background: url(../images/tel.png) no-repeat center center;
+    background-size: 100%;
+    margin-top: 56px;
+}
+
+.qy-floor-two {
+    float: left;
+    margin-top: 56px;
+    width: 820px;
+}
+
+.qy-floor-two div {
+    float: left;
+    width: 170px;
+}
+
+.qy-floor-two div:first-child {
+    margin-left: 106px;
+}
+
+.qy-floor-two div:nth-child(3) {
+    width: 200px;
+}
+
+.qy-floor-two div li a {
+    color: #919191;
+    font-size: 14px;
+    display: block;
+    line-height: 36px;
+}
+
+.qy-floor-two div li a:hover {
+    opacity: 0.8;
+}
+
+.qy-floor-two div li:first-child {
+    color: #3d3d3d;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.qy-floor-three {
+    float: left;
+    width: 200px;
+}
+
+.qy-floor-three-one {
+    height: 38px;
+    margin-top: 57px;
+}
+
+.qy-floor-three-one a {
+    display: block;
+    float: left;
+    width: 36px;
+    height: 36px;
+    margin: 0 5px;
+    background-size: 100%;
+}
+
+.qy-floor-three-one a:hover {
+    opacity: 0.8;
+}
+
+.qy-floor-three-one a:first-child {
+    background-image: url(../images/shop_img1.png);
+}
+
+.qy-floor-three-one a:nth-child(2) {
+    background-image: url(../images/shop_img2.png);
+}
+
+.qy-floor-three-one a:nth-child(3) {
+    background-image: url(../images/shop_img3.png);
+}
+
+.qy-floor-three-one a:nth-child(4) {
+    background-image: url(../images/shop_img4.png);
+}
+
+.qy-floor-three-two {
+    width: 128px;
+    height: 128px;
+    background-image: url(../images/codeimg.png);
+    background-size: 100%;
+    margin: auto;
+    margin-top: 28px;
+}
+
+.qy-floor-three-three {
+    width: 128px;
+    color: #a4a4a4;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    margin: auto;
+    margin-top: 11px;
+}
+
+.qy-floor-three-three a {
+    font-size: 12px;
+    color: #3e3e3e;
+}
+
+.qy-floor-bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 68px;
+    background-color: #f2f4f4;
+}
