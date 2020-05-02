@@ -425,3 +425,240 @@
     right: 523.5px;
     z-index: 26;
 }
+
+
+/* 防伪查询 */
+
+.anti-fake {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 250;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.anti-fake-content {
+    width: 800px;
+    height: 550px;
+    position: relative;
+    z-index: 11;
+    background-color: #fff;
+    border: 10px solid #f3f3f3;
+    box-shadow: 0px 0px 20px 10px #d3d3d3;
+    left: 541.5px;
+    top: 199.5px;
+}
+
+.anti-fake-img {
+    width: 100%;
+    height: 150px;
+    background: url(../images/repairs/anti_search.png) no-repeat center center;
+    background-size: 210px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.anti-fake-input {
+    width: 650px;
+    height: 64px;
+    margin: auto;
+    margin-top: 65px;
+    margin-bottom: 50px;
+}
+
+.anti-fake-input input {
+    width: 350px;
+    height: 16px;
+    line-height: 1;
+    color: #afafaf;
+    font-size: 16px;
+    padding: 24px 30px;
+    border: 0px;
+    background-color: #f5f5f5;
+    float: left;
+    border-radius: 5px;
+}
+
+.anti-fake-input .button {
+    width: 220px;
+    height: 100%;
+    line-height: 64px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    background-color: #2fc7a0;
+    border-radius: 5px;
+    float: right;
+}
+
+.anti-fake-content p {
+    color: #535353;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 22px;
+}
+
+.anti-fake-content a {
+    color: #ff681e;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    width: 200px;
+    margin: auto;
+    margin-top: 50px;
+    text-decoration: underline;
+}
+
+
+/* 底部 */
+
+.qy-floor {
+    position: relative;
+    width: 100%;
+    height: 446px;
+    background-color: #fff;
+    padding-top: 17px;
+    box-sizing: border-box;
+}
+
+.qy-floor-one {
+    float: left;
+}
+
+.qy-floor-one a {
+    width: 260px;
+    height: 70px;
+    background: url(../images/logo.png) no-repeat center center;
+    background-size: 100%;
+    display: block;
+    margin-top: 52px
+}
+
+.qy-floor-one a:hover {
+    opacity: 0.8;
+}
+
+.qy-floor-one div {
+    width: 250px;
+    height: 60px;
+    background: url(../images/tel.png) no-repeat center center;
+    background-size: 100%;
+    margin-top: 56px;
+}
+
+.qy-floor-two {
+    float: left;
+    margin-top: 56px;
+    width: 820px;
+}
+
+.qy-floor-two div {
+    float: left;
+    width: 170px;
+}
+
+.qy-floor-two div:first-child {
+    margin-left: 106px;
+}
+
+.qy-floor-two div:nth-child(3) {
+    width: 200px;
+}
+
+.qy-floor-two div li a {
+    color: #919191;
+    font-size: 14px;
+    display: block;
+    line-height: 36px;
+}
+
+.qy-floor-two div li a:hover {
+    opacity: 0.8;
+}
+
+.qy-floor-two div li:first-child {
+    color: #3d3d3d;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.qy-floor-three {
+    float: left;
+    width: 200px;
+}
+
+.qy-floor-three-one {
+    height: 38px;
+    margin-top: 57px;
+}
+
+.qy-floor-three-one a {
+    display: block;
+    float: left;
+    width: 36px;
+    height: 36px;
+    margin: 0 5px;
+    background-size: 100%;
+}
+
+.qy-floor-three-one a:hover {
+    opacity: 0.8;
+}
+
+.qy-floor-three-one a:first-child {
+    background-image: url(../images/shop_img1.png);
+}
+
+.qy-floor-three-one a:nth-child(2) {
+    background-image: url(../images/shop_img2.png);
+}
+
+.qy-floor-three-one a:nth-child(3) {
+    background-image: url(../images/shop_img3.png);
+}
+
+.qy-floor-three-one a:nth-child(4) {
+    background-image: url(../images/shop_img4.png);
+}
+
+.qy-floor-three-two {
+    width: 128px;
+    height: 128px;
+    background-image: url(../images/codeimg.png);
+    background-size: 100%;
+    margin: auto;
+    margin-top: 28px;
+}
+
+.qy-floor-three-three {
+    width: 128px;
+    color: #a4a4a4;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    margin: auto;
+    margin-top: 11px;
+}
+
+.qy-floor-three-three a {
+    font-size: 12px;
+    color: #3e3e3e;
+}
+
+.qy-floor-bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 68px;
+    background-color: #f2f4f4;
+}
+
+.sky {
+    width: 100%;
+    height: 0px;
+    border-bottom: 1px solid #f4f4f4;
+    margin-top: 100px;
+}
