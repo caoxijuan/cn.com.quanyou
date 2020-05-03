@@ -167,7 +167,7 @@
     <div class="qy-silder-two">
         <div class="container">
             <div class="qy-silder-two-main">
-                <ul>
+                <ul class="ative1">
                     <li>
                         <a href=""><img src="./images/slide-5.jpg" alt=""></a>
                     </li>
@@ -226,8 +226,8 @@
                     </li>
                 </ul>
             </div>
-            <a href="javascript:;" class="left"></a>
-            <a href="javascript:;" class="right"></a>
+            <a href="javascript:;" class="prev"></a>
+            <a href="javascript:;" class="next"></a>
             <div class="qy-slider-two-all clearfix">
                 <a href="javascript:;">
                     <img src="./images/slide-21.jpg" alt="">
@@ -333,7 +333,10 @@
                 <p>查找您附近的全友专卖店</p>
                 <div class="qy-search-bottom clearfix">
                     <div class="qy-search-bottom-one">
-                        <div class="one">请选择省份</div>
+                        <select class="one">
+                            <option value="" selected="selected">请选择省份</option>
+                            <option value="">北京市</option>
+                        </select>
                         <div class="one-bottom">
                             <a href="javascript:;">北京市</a>
                             <a href="javascript:;">江苏省</a>
@@ -477,6 +480,7 @@
         </div>
         <div class="qy-floor-bottom"></div>
     </div>
+    <script src="./js/animate.js"></script>
     <script src="./lib/jquery/jquery-3.4.1.min.js"></script>
     <script src="./js/index.js"></script>
 </body>

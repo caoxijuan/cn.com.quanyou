@@ -50,6 +50,11 @@ $(document).on('scroll', function() {
         })
     }
 })
+
+
+
+
+
 $('.silder-box-1').mySilder({
     width: 356, //容器的宽度 必选参数!!!!!!
     height: 556, //容器的高度 必选参数!!!!!!

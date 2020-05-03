@@ -388,7 +388,7 @@
     height: 100%;
 }
 
-.qy-silder-two .left {
+.qy-silder-two .prev {
     width: 64px;
     height: 64px;
     background-image: url(../images/slide-1.png);
@@ -398,11 +398,11 @@
     z-index: 10;
 }
 
-.qy-silder-two .left:hover {
+.qy-silder-two .prev:hover {
     background-image: url(../images/slide-2.png);
 }
 
-.qy-silder-two .right {
+.qy-silder-two .next {
     width: 64px;
     height: 64px;
     background-image: url(../images/slide-3.png);
@@ -412,7 +412,7 @@
     z-index: 10;
 }
 
-.qy-silder-two .right:hover {
+.qy-silder-two .next:hover {
     background-image: url(../images/slide-4.png);
 }
 
@@ -763,6 +763,12 @@
     background: url(../images/arrow-right-down\ .png) no-repeat center right;
     padding-right: 20px;
     padding-left: 10px;
+    border: none;
+    outline: none;
+    /*去掉默认的下拉三角*/
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
 }
 
 .qy-search-bottom-one .one-bottom {
